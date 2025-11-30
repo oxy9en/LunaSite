@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Luna Alarm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <style>
+        /* --- GLOBAL STYLES (MATCHING LANDING PAGE) --- */
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-purple: #C084FC;
+            --accent-pink: #F472B6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050507;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- BACKGROUND ANIMATION (Aura) --- */
+        .aura-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.05) 0%, transparent 60%);
+            filter: blur(80px);
+            animation: breathe 15s infinite alternate ease-in-out;
+        }
+
+        @keyframes breathe {
+            0% { opacity: 0.5; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* --- UTILITIES --- */
+        .glass-panel {
+            background: rgba(20, 20, 25, 0.6);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #E9D5FF, #FBCFE8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Legal Text Specifics */
+        .legal-content h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #E9D5FF;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+        }
+
+        .legal-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: #D1D5DB;
+        }
+
+        .legal-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #D1D5DB;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500 selection:text-white">
+
+    <div class="aura-bg"></div>
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-black/10 backdrop-blur-md border-b border-white/5">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <i data-lucide="arrow-left" class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
+            <span class="text-sm font-medium text-gray-400 group-hover:text-white transition-colors">Back to Home</span>
+        </a>
+        <div class="flex items-center gap-2">
+            <span class="text-xl font-serif italic font-bold text-white">Luna Alarm</span>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            
+            <div class="glass-panel p-8 md:p-12 rounded-[32px] shadow-2xl">
+                
+                <!-- Header -->
+                <div class="mb-12 border-b border-white/10 pb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 font-serif text-gradient">Privacy Policy</h1>
+                    <div class="flex flex-col md:flex-row gap-4 text-sm text-gray-500 font-medium uppercase tracking-wider">
+                        <span>Last Updated: November 19, 2025</span>
+                        <span class="hidden md:inline">•</span>
+                        <span>Effective Date: November 19, 2025</span>
+                    </div>
+                </div>
+
+                <!-- Legal Text -->
+                <div class="legal-content">
+                    <p class="text-lg">This Privacy Policy explains how <b>Luna Alarm</b> ("we", "our", "us") collects, uses, and protects your information when you use our iOS mobile application Luna Alarm ("App").</p>
+                    <p>By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+                    <h2>1. Information We Collect</h2>
+                    
+                    <h3>1.1 Information You Provide</h3>
+                    <p>During onboarding, we collect the following information to personalize your AI assistant experience:</p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Preferred pronouns (He/Him, She/Her, They/Them)</li>
+                        <li>Preferred language</li>
+                        <li>Chosen virtual avatar</li>
+                    </ul>
+                    <p>You may also provide optional information through interactions with the AI assistant.</p>
+
+                    <h3>1.2 Usage Data</h3>
+                    <p>We may collect certain information automatically:</p>
+                    <ul>
+                        <li>App usage activity (e.g., alarms created, time settings)</li>
+                        <li>Device information (model, OS version)</li>
+                        <li>Interaction logs with the AI assistant (non-sensitive, anonymized)</li>
+                        <li>Crash logs and performance metrics</li>
+                    </ul>
+
+                    <h3>1.3 Alarm-Related Data</h3>
+                    <p>To provide the core functionality, the App stores:</p>
+                    <ul>
+                        <li>Alarm schedules (time, days of week)</li>
+                        <li>AI avatar settings</li>
+                    </ul>
+                    <p>This data is stored locally on your device and/or in cloud backups if enabled by iOS.</p>
+
+                    <h2>2. How We Use Your Information</h2>
+                    <p>We use your information to:</p>
+                    <ul>
+                        <li>Provide alarm and wake-up features</li>
+                        <li>Personalize interactions with the AI assistant</li>
+                        <li>Improve app performance and user experience</li>
+                        <li>Maintain app security</li>
+                        <li>Provide customer support</li>
+                    </ul>
+                    <p class="font-semibold text-white">We do not sell, rent, or trade your personal information.</p>
+
+                    <h2>3. AI Assistant Interactions</h2>
+                    <p>All AI-generated responses are automated. Depending on your settings, anonymized interaction data may be sent to AI processing services solely to generate responses.</p>
+                    <p>We do not use your name, pronouns, or profile data for targeting, advertising, or external analytics.</p>
+
+                    <h2>4. Third-Party Services</h2>
+                    <p>The App may use third-party tools (such as analytics or AI processing services). These services may collect limited technical data necessary for functionality.</p>
+                    <p>We ensure all partners comply with applicable data protection laws.</p>
+
+                    <h2>5. Data Retention</h2>
+                    <ul>
+                        <li>Profile data is stored until you delete the App or reset your profile.</li>
+                        <li>Alarm settings remain on the device until removed.</li>
+                        <li>Usage analytics (if any) is retained only as necessary for operational purposes.</li>
+                    </ul>
+
+                    <h2>6. Data Security</h2>
+                    <p>We take reasonable technical and organizational measures to protect your data. However, no system is fully secure.</p>
+
+                    <h2>7. Children’s Privacy</h2>
+                    <p>Luna Alarm is not intended for children under 13 years old. We do not knowingly collect personal information from children.</p>
+
+                    <h2>8. Your Rights</h2>
+                    <p>Depending on your jurisdiction, you may have rights to:</p>
+                    <ul>
+                        <li>Access your data</li>
+                        <li>Delete your data</li>
+                        <li>Opt out of analytics</li>
+                        <li>Request corrections</li>
+                    </ul>
+                    <p>Contact us at <a href="mailto:support@lunaalarm.app" class="text-purple-300 hover:text-white">support@lunaalarm.app</a> to submit a request.</p>
+
+                    <h2>9. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. Updates take effect upon posting within the App.</p>
+
+                    <h2>10. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us.</p>
+                    <div class="mt-4 p-4 bg-white/5 rounded-xl border border-white/10 inline-block">
+                        <p class="mb-1 text-sm text-gray-400">Email:</p>
+                        <a href="mailto:support@lunaalarm.app" class="text-purple-300 hover:text-white transition-colors font-semibold">support@lunaalarm.app</a>
+                        <p class="mt-2 mb-0 text-sm text-gray-400">App Name: <span class="text-white">Luna Alarm</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center border-t border-white/5 bg-black/40">
+        <p class="text-gray-600 text-xs">
+            &copy; 2025 Luna Alarm. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+```
+
+### Напоминание: Обновите ссылку на главной странице
+
+Не забудьте в вашем файле `index.html` в футере изменить ссылку на Privacy Policy.
+
+**Было:**
+```html
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
