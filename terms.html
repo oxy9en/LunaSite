@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Luna Alarm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <style>
+        /* --- GLOBAL STYLES (MATCHING LANDING PAGE) --- */
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-purple: #C084FC;
+            --accent-pink: #F472B6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050507;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- BACKGROUND ANIMATION (Aura) --- */
+        .aura-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.05) 0%, transparent 60%);
+            filter: blur(80px);
+            animation: breathe 15s infinite alternate ease-in-out;
+        }
+
+        @keyframes breathe {
+            0% { opacity: 0.5; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* --- UTILITIES --- */
+        .glass-panel {
+            background: rgba(20, 20, 25, 0.6); /* Slightly darker for readability */
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #E9D5FF, #FBCFE8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Legal Text Specifics */
+        .legal-content h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #E9D5FF;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+        }
+        
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: #D1D5DB;
+        }
+
+        .legal-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #D1D5DB;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500 selection:text-white">
+
+    <div class="aura-bg"></div>
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-black/10 backdrop-blur-md border-b border-white/5">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <i data-lucide="arrow-left" class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
+            <span class="text-sm font-medium text-gray-400 group-hover:text-white transition-colors">Back to Home</span>
+        </a>
+        <div class="flex items-center gap-2">
+            <span class="text-xl font-serif italic font-bold text-white">Luna Alarm</span>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            
+            <div class="glass-panel p-8 md:p-12 rounded-[32px] shadow-2xl">
+                
+                <!-- Header -->
+                <div class="mb-12 border-b border-white/10 pb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 font-serif text-gradient">Terms of Service</h1>
+                    <div class="flex flex-col md:flex-row gap-4 text-sm text-gray-500 font-medium uppercase tracking-wider">
+                        <span>Last Updated: November 19, 2025</span>
+                        <span class="hidden md:inline">•</span>
+                        <span>Effective Date: November 19, 2025</span>
+                    </div>
+                </div>
+
+                <!-- Legal Text -->
+                <div class="legal-content">
+                    <p class="text-lg">Welcome to <b>Luna Alarm</b> ("App", "Service"). By downloading or using the App, you agree to these Terms of Service ("Terms").</p>
+                    <p class="font-bold text-white">If you do not agree, do not use the App.</p>
+
+                    <h2>1. Description of the Service</h2>
+                    <p>Luna Alarm provides:</p>
+                    <ul>
+                        <li>Alarm scheduling</li>
+                        <li>AI-assisted wake-up interactions</li>
+                        <li>Personalization via name, pronouns, language, and avatar</li>
+                    </ul>
+                    <p>The App is intended solely for personal, non-commercial use.</p>
+
+                    <h2>2. User Accounts</h2>
+                    <p>No account registration is required. However, you must provide certain onboarding data (name, pronouns, language) for personalization.</p>
+
+                    <h2>3. Acceptable Use</h2>
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Use the App for unlawful purposes</li>
+                        <li>Interfere with App functionality</li>
+                        <li>Reverse engineer or modify the App</li>
+                        <li>Abuse AI interactions</li>
+                        <li>Upload harmful content</li>
+                    </ul>
+                    <p>Violation of these Terms may result in termination of access.</p>
+
+                    <h2>4. AI Assistant Interactions</h2>
+                    <p>The AI avatar generates automated responses. You acknowledge that:</p>
+                    <ul>
+                        <li>AI interactions are not real human communication</li>
+                        <li>The App does not provide medical, psychological, or professional advice</li>
+                        <li>You must not rely on the App for emergencies</li>
+                    </ul>
+                    <p class="font-bold text-pink-300">In case of emergency, call your local emergency services.</p>
+
+                    <h2>5. Intellectual Property</h2>
+                    <p>All content in the App—including avatars, designs, audio, and AI-generated output—is owned by us or licensed to us.</p>
+                    <p>You may not copy, modify, or distribute any part of the App without permission.</p>
+
+                    <h2>6. In-App Purchases</h2>
+                    <p>If the App offers paid features:</p>
+                    <ul>
+                        <li>Purchases are handled through Apple’s in-app purchase system</li>
+                        <li>Refunds are governed by Apple’s policies</li>
+                        <li>Access to paid features continues only while the subscription is active</li>
+                    </ul>
+
+                    <h2>7. Disclaimer of Warranties</h2>
+                    <p>The App is provided “as is” without warranties of any kind, including:</p>
+                    <ul>
+                        <li>Reliability</li>
+                        <li>Accuracy of AI responses</li>
+                        <li>Uninterrupted operation</li>
+                    </ul>
+
+                    <h2>8. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by law, we are not liable for:</p>
+                    <ul>
+                        <li>Loss of data</li>
+                        <li>Missed alarms</li>
+                        <li>Improper or unexpected AI responses</li>
+                        <li>Device damage</li>
+                        <li>Indirect or consequential damages</li>
+                    </ul>
+                    <p>Your use of the App is at your sole risk.</p>
+
+                    <h2>9. Termination</h2>
+                    <p>We may terminate access if you violate these Terms.</p>
+                    <p>You may stop using the App anytime by deleting it.</p>
+
+                    <h2>10. Changes to These Terms</h2>
+                    <p>We may update these Terms occasionally. Continued use of the App constitutes acceptance of updated Terms.</p>
+
+                    <h2>11. Governing Law</h2>
+                    <p>These Terms are governed by the laws of your country of residence unless overridden by consumer protection laws.</p>
+
+                    <h2>12. Contact Us</h2>
+                    <p>If you have any questions about these Terms, please contact us.</p>
+                    <div class="mt-4 p-4 bg-white/5 rounded-xl border border-white/10 inline-block">
+                        <p class="mb-1 text-sm text-gray-400">Email:</p>
+                        <a href="mailto:support@lunaalarm.app" class="text-purple-300 hover:text-white transition-colors font-semibold">support@lunaalarm.app</a>
+                        <p class="mt-2 mb-0 text-sm text-gray-400">App Name: <span class="text-white">Luna Alarm</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center border-t border-white/5 bg-black/40">
+        <p class="text-gray-600 text-xs">
+            &copy; 2025 Luna Alarm. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+```
+
+### Важно: Обновите ссылку на главной странице
+
+Теперь вам нужно открыть ваш файл **лендинга** (например, `index.html`) и найти в самом низу, в футере, строку с ссылкой на Terms of Service. Замените `#` на `terms.html`.
+
+**Было:**
+```html
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
